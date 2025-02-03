@@ -18,7 +18,7 @@ public class Literals {
         System.out.println(w);  // 10
         System.out.println(a);  // 16
         System.out.println(b);  // 64206
-        System.out.println(c);  // 43981
+        System.out.println(c);  // 703710
 
     }
 }
