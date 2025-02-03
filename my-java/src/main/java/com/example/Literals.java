@@ -12,6 +12,24 @@ public class Literals {
 
         int c = 0b1010_1011_1100_1101_1110;  // binary literal with underscores
 
+        double d = 1_000_000.0;  // double literal with underscores
+        double e = 01__23.4_5_6;
+        double f = 0x1.2p3;  // hexadecimal floating-point literal
+
+        // double g = 0786; // invalid: octal literals can only contain digits from 0 to 7
+
+        double g = 0786.0; // valid: decimal point makes it a decimal literal
+
+        double h = 0xFace; // valid: decimal point makes it a decimal literal
+
+        // double i = 0xFace.0; // invalid: decimal point makes it a decimal literal
+
+        double i = 1.23e3;  // scientific notation
+
+        //double j = _1_22.2_2_; // invalid: cannot place underscores at the beginning or end of a number
+
+
+
         System.out.println(x);  // 10
         System.out.println(y);  // 10
         System.out.println(z);  // 10
@@ -20,6 +38,48 @@ public class Literals {
         System.out.println(b);  // 64206
         System.out.println(c);  // 703710
 
+        System.out.println(d);  // 1000000.0
+        System.out.println(e);  // 123.456
+        System.out.println(f);  // 9.0
+        System.out.println(g);  // 786.0
+        System.out.println(h);  // 64206.0
+        System.out.println(i);  // 1230.0
+
+
+        char ch = 'A';  // character literal
+        char tab = '\t';  // escape sequence
+        char newline = '\n';  // escape sequences
+        char backslash = '\\';  // escape sequence
+        char singleQuote = '\'';  // escape sequence
+        char doubleQuote = '\"';  // escape sequence
+        char unicode = '\u0041';  // Unicode escape sequence for 'A'
+       //  char ch1 = 'ab'; // invalid: character literal can only contain a single character //complication error : unclosed character literal
+        char ch2 = 0XFace; // valid: hexadecimal literal can be assigned to a char variable
+        char ch3 = 65; // valid: decimal literal can be assigned to a char variable
+        char ch4 = 0101; // valid: octal literal can be assigned to a char variable
+        char ch5 = 0b101; // valid: binary literal can be assigned to a char variable
+        char ch6 = 97;
+        char ch7 = '\r'; // carriage return : moves the cursor to the beginning of the line
+        char ch8 = '\f'; // form feed : moves the cursor to the next page
+        char ch9 = '\b'; // backspace : moves the cursor one position to the left
+
+        char ch10 = '\uface'; //龜
+
+
+        System.out.println(ch6); //a
+        System.out.println(ch);  // A
+        System.out.println(tab);  //
+        System.out.println(newline);  //
+        System.out.println(backslash);  //
+        System.out.println(singleQuote);  //
+        System.out.println(doubleQuote);  //
+        System.out.println(unicode);  // A
+        System.out.println(ch2);  // 64206
+        System.out.println(ch3);  // A
+        System.out.println(ch4);  // A
+        System.out.println(ch5);  // A
+
+        System.out.println(ch10); //龜
     }
 }
 
