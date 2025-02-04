@@ -92,9 +92,15 @@ public class ArrayCreation {
         }
 
 
+        int[] arr = new int[3];
+        System.out.println(arr); // prints [I@1b6d3586 //internally toString method will be called as classname@hashcode
+        System.out.println(arr[0]); // prints 0 //default value of int
 
 
-
+        int[][] arr1 = new int[2][3];
+        System.out.println(arr1); // prints [[I@4554617c //internally toString method will be called as classname@hashcode
+        System.out.println(arr1[0]); // prints [I@74a14482 //internally toString method will be called as classname@hashcode
+        System.out.println(arr1[0][0]); // prints 0 //default value of int
 
 
 
